@@ -1,9 +1,5 @@
-from gradio.components import Label
-from numpy import ediff1d
-import torch
-import time
+
 from transformers import pipeline,AutoTokenizer,AutoModelForCausalLM,BitsAndBytesConfig
-import gradio as gr
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from sentence_transformers import SentenceTransformer
