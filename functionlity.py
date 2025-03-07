@@ -16,10 +16,10 @@ from langchain_core.prompts.chat import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 
 
-from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
-import torch
-import soundfile as sf
-from datasets import load_dataset
+#from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
+#import torch
+#import soundfile as sf
+#from datasets import load_dataset
 
 
 # Function to transcribe audio using the OpenAI Whisper model
