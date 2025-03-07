@@ -1,5 +1,4 @@
 fastapi
-os
 shutil
 transformers
 langchain
