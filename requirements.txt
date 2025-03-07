@@ -1,5 +1,5 @@
 fastapi
-"fastapi[standard]"
+fastapi-cli
 transformers
 langchain
 langchain_community
