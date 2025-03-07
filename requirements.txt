@@ -1,4 +1,5 @@
 fastapi
+ffmpeg
 python-multipart
 fastapi-cli
 transformers
