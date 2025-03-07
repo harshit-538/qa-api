@@ -1,0 +1,9 @@
+fastapi
+os
+shutil
+transformers
+langchain
+langchain_community
+sentence_transformers
+langchain_huggingface
+langchain_core
