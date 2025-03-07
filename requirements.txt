@@ -1,5 +1,6 @@
 fastapi
 ffmpeg
+faiss-cpu
 python-multipart
 fastapi-cli
 transformers
