@@ -26,7 +26,7 @@ async def upload_video(file: UploadFile = File(...)):
 async def transcribe_video(file_path: str = Query(..., description="Path of the uploaded video file")):
     """Transcribe the uploaded video file."""
     chunk_data = transcript_audio(file_path)
-    faiss(chunk_data)
+    #faiss(chunk_data)
     return {"transcription": chunk_data}
 
 @app.get("/answer/")
