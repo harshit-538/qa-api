@@ -1,5 +1,4 @@
 fastapi
-shutil
 transformers
 langchain
 langchain_community
