@@ -12,7 +12,7 @@ def root():
 UPLOAD_DIR = "data/input_videos/"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-@app.post("/upload")
+@app.post("/upload/")
 async def upload_video(file: UploadFile = File(...)):
     """Upload video file and save it."""
     file_path = os.path.join(UPLOAD_DIR, file.filename)
