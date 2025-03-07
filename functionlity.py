@@ -2,14 +2,13 @@
 from transformers import pipeline,AutoTokenizer,AutoModelForCausalLM,BitsAndBytesConfig
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from sentence_transformers import SentenceTransformer
-from langchain_huggingface import HuggingFaceEmbeddings
+#from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import transformers
-from langchain_openai import OpenAI,OpenAIEmbeddings
-from langchain_community.llms import CTransformers
+#from langchain_openai import OpenAI,OpenAIEmbeddings
+#from langchain_community.llms import CTransformers
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from langchain.chat_models import init_chat_model
@@ -22,8 +21,6 @@ import torch
 import soundfile as sf
 from datasets import load_dataset
 
-# tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
-# model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
 
 # Function to transcribe audio using the OpenAI Whisper model
 def transcript_audio(audio_file):
