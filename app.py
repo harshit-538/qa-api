@@ -15,12 +15,13 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 @app.post("/upload/")
 async def upload_video(file: UploadFile = File(...)):
     """Upload video file and save it."""
-    file_path = os.path.join(UPLOAD_DIR, file.filename)
+    #file_path = os.path.join(UPLOAD_DIR, file.filename)
 
-    with open(file_path, "wb") as buffer:
-        shutil.copyfileobj(file.file, buffer)
+    #with open(file_path, "wb") as buffer:
+     #   shutil.copyfileobj(file.file, buffer)
 
-    return {"message": "Video uploaded successfully", "filename": file.filename, "file_path": file_path}
+    #return {"message": "Video uploaded successfully", "filename": file.filename, "file_path": file_path}
+    return {"message": "Video uploaded successfully", "filename": file.filename}
 
 @app.get("/transcribe/")
 async def transcribe_video(file_path: str = Query(..., description="Path of the uploaded video file")):
