@@ -1,4 +1,5 @@
 fastapi
+uvicorn
 ffmpeg
 faiss-cpu
 python-multipart
